@@ -1,0 +1,91 @@
+// Variables
+@import "variables.scss";
+
+// Mixin
+@import "mixin.scss";
+
+// Reviews
+.reviews {
+	&__slider {
+		// max-width: 1000px;
+		display: flex;
+		.reviews__avatar {
+			img {
+				display: none;
+				&.show {
+					display: block;
+					width: 389px;
+					height: 389px;
+					border-radius: 50% 0 50% 50%;
+					box-shadow: 10px 20px 50px 0 rgba(0,0,0,.15)
+				}	
+			}
+		}
+		.reviews__text {
+			width: 100%;
+			margin-left: 50px;
+			display: flex;
+			align-items: center;
+			// Slider
+			.ol {
+				width: 100%;
+				overflow: hidden;
+				// Wrapper
+				&__wrapper {
+					// width: 500%;
+					display: flex;
+					transition: all 0.3s;
+					.ol__slide {
+						width: 100%;
+						// background-color: rgba(0,0,0,0);
+						// &:nth-child(1) {
+						// 	background-color: #f5587b;
+						// }
+						// &:nth-child(2) {
+						// 	background-color: #ff8a5c;
+						// }
+						// &:nth-child(3) {
+						// 	background-color: #fff591;
+						// }
+						// &:nth-child(4) {
+						// 	background-color: #2694ab;
+						// }
+						// &:nth-child(5) {
+						// 	background-color: #D65F00;
+						// }
+						h1 {
+							-webkit-text-stroke: 0.8px #000;
+							@include text(24px, #000, $averta, 400);
+						}
+						p {
+							margin-top: 10px;
+							@include text(16px, #565656, $averta, 400);
+						}
+					}
+				}
+				// Dots
+				&__dots {
+					margin: 50px 0 0 -25px;
+					display: flex;
+					.ol__dot {
+						width: 20px;
+						height: 20px;
+						border-radius: 50%;
+						background-color: #E7F0FC;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						cursor: pointer;
+						margin-left: 25px;
+						&.active {
+							background-color: #2639ED;
+						}
+						&.hidden {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}

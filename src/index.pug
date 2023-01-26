@@ -1,0 +1,214 @@
+doctype html
+html(lang='en')
+	head
+		title Your title 
+
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
+		//- styles
+		link(rel="stylesheet" href="/css/ol_slider.min.css")
+		link(rel="stylesheet" href="/css/main.min.css")
+
+	body
+			#wrapper
+
+				main.main
+					.container
+
+						section.content
+
+							.top
+
+								header.header
+									.header__logo
+										h1 Ternhost
+
+									.header__menu
+										ul.header__menu-list
+											li.header__menu-item
+												a.header__menu-link Home
+											li.header__menu-item
+												a.header__menu-link(href="#about") What We Do
+											li.header__menu-item
+												a.header__menu-link(href="#media") Service
+											li.header__menu-item
+												a.header__menu-link(href="#reviews") Project
+											li.header__menu-item
+												a.header__menu-link(href="#subs") Contact
+
+								.top__body
+									.top__body-content
+										.top__body-text
+											h1 IT Product Agency
+											p Leading digital agency with solid design and development expertise. We build readymade websites, mobile applications, and elaborate online business services.
+
+										.top__body-button
+											button Contact Now
+
+											.top__body-dots
+												img(src="image/top-background-left.svg")
+
+										.top__body-image
+											img(src="image/top-background-right.svg")
+							
+							.about
+								.about__text
+									h1 How can we help <br> your Business ?
+									p We build readymade websites, mobile applications, <br> and elaborate online business services.
+								.about__cards
+									ul.about__cards-list
+										li.about__cards-item
+											.card-icon.blue
+												img(src="/image/about-cube.svg")
+											.card-text
+												h1 Business Idea <br> Planning
+												p We present you a proposal and discuss niffty-gritty like
+										li.about__cards-item
+											.card-icon.red
+												img(src="/image/about-code.svg")
+											.card-text
+												h1 Business Idea <br> Planning
+												p We present you a proposal and discuss niffty-gritty like
+									ul.about__cards-list
+										li.about__cards-item
+											.card-icon.yellow
+												img(src="/image/about-wallet.svg")
+											.card-text
+												h1 Business Idea <br> Planning
+												p We present you a proposal and discuss niffty-gritty like
+										li.about__cards-item
+											.card-icon.green
+												img(src="/image/about-chart.svg")
+											.card-text
+												h1 Business Idea <br> Planning
+												p We present you a proposal and discuss niffty-gritty like
+							
+							.media
+								.media__video
+									img(src="https://wallpapercave.com/wp/wp5615348.jpg")
+								.media__text
+									h1 Great Digital Product Agency since 2016
+									p Our Business Plan is a written document describing a company's core business activites, Objectives, and how it plans to achieve its goals. Our goal is to provide our client high quality Product with modern idea accordingly their budgets and according thir reuirements.
+							
+							.reviews
+								header.reviews__header
+									h1 What our happy client say 
+									p Several selected clients, who already believe in our service.
+
+								.reviews__content
+									.reviews__slider
+										.reviews__avatar
+											img.review__image.show(src="https://i1.sndcdn.com/artworks-517dbCfbqbHwhEti-ClLeNg-t240x240.jpg")
+											img.review__image(src="https://images.genius.com/fa6771f85400678f949ab2da5d822b4e.400x400x1.png")
+											img.review__image(src="https://lastfm.freetls.fastly.net/i/u/ar0/9218ff4ef13104b8acef7e2233c7fc64.jpg")
+											img.review__image(src="https://www.meme-arsenal.com/memes/29ca8d7430533faa18f12db4a8d3807b.jpg")
+											img.review__image(src="https://www.meme-arsenal.com/memes/e5da7cbb9862bde66bde3a87f6ab9514.jpg")
+
+										.reviews__text
+											.ol
+												.ol__wrapper
+													.ol__slide.active 
+														h1 Фома
+														p Фома — лидер группы. Настоящее имя — Дмитрий (Фомин) Прянов. Обладатель моментально узнаваемого высокого голоса, из-за которого некоторые недалёкие люди начинают подозревать его в гомосячестве. Главный генератор всех высеров шедевров команды «Ебанько». Исполнил в составе коллектива более 500 песен.
+
+													.ol__slide
+														h1 Поль Лэнэ
+														p Поль Лэнэ (он же Полено, Бревно, Деревянный, Савелич, Буратино). Участник основного состава группы. Настоящее имя — Александр Карпихин. Спел 175 песен в составе Ебанашек. Лучший друг Фомы. О нём нынешнем тоже смотрите чуть пониже.
+
+													.ol__slide
+														h1 Карим (он же Руслан)
+														p Карим (он же Руслан). В теории — непонятный ноль без палочки, ибо отметился лишь в 9 песнях группы, но по факту оказал (цитата с фан-сайта группы) огромное влияние на целый пласт культуры «Ебанько». Прямо серый кардинал какой-то…
+
+													.ol__slide
+														h1 Харитон
+														p Харитон (он же Харитон Устинович Йорк — имеющие уши да слышат). Настоящее имя — Сергей Данилов. Участник основного состава группы. Обладает очень красивым низким тембром голоса. Исполнил вокальные партии в 102 песнях.
+
+													.ol__slide
+														h1 Бусенка
+														p Бусенка. Настоящее имя — Ирина Иванова (ВКонтакте она, правда, почему-то Ирен Гладких). Приняла участие в исполнении 29 песен «Ебанько».
+												
+												.ol__dots
+													.ol__dot.hidden 1
+									.reviews__people
+										img(src="./image/reviews-people.svg")
+							
+							.subs
+								.subs__content
+									.subs__form
+										.subs__form-text
+											h1 Subscribe Newsletter
+											p I will update good news and promotion service not spam
+										.subs__form-input
+											input(placeholder="Enter your email address..")
+											button Contact Now
+
+							footer.footer
+								.footer__container
+									.footer__left
+										.footer__text
+											h1 Ternhost
+											p Leading digital agency with solid design and development expertise. We build readymade websites, mobile applications, and elaborate online business services.
+										.footer__social
+											ul.footer__social-list
+												li.footer__social-item
+													a.footer__social-link
+														img(src="./image/meta.svg")
+												li.footer__social-item
+													a.footer__social-link
+														img(src="./image/twitter.svg")
+												li.footer__social-item
+													a.footer__social-link
+														img(src="./image/linkedin.svg")
+									.footer__menu
+										.footer__menu-card
+											h1 What We Do
+
+											ul.footer__menu-list
+												li.footer__menu-item
+													a.footer__menu-link Web Design
+												li.footer__menu-item
+													a.footer__menu-link App Design
+												li.footer__menu-item
+													a.footer__menu-link Social Media Manage
+												li.footer__menu-item
+													a.footer__menu-link Market Analysis Project
+
+										.footer__menu-card
+											h1 Company
+
+											ul.footer__menu-list
+												li.footer__menu-item
+													a.footer__menu-link About Us
+												li.footer__menu-item
+													a.footer__menu-link Career
+												li.footer__menu-item
+													a.footer__menu-link Become Investor
+
+										.footer__menu-card
+											h1 Support
+
+											ul.footer__menu-list
+												li.footer__menu-item
+													a.footer__menu-link FAQ
+												li.footer__menu-item
+													a.footer__menu-link Policy
+												li.footer__menu-item
+													a.footer__menu-link Business
+
+										.footer__menu-card
+											h1 Contact
+
+											ul.footer__menu-list
+												li.footer__menu-item
+													a.footer__menu-link WhatsApp
+												li.footer__menu-item
+													a.footer__menu-link Support 24
+
+								.footer__end
+									h3 Copyright © 2022 Avi Yansah
+
+
+	//- Js
+	script(src="/js/ol_slider.js")
+	script(src="/js/main.js")

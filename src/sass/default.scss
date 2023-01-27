@@ -20,6 +20,11 @@ ul, li {
 	list-style-type: none;
 }
 
+img {
+	user-select: none;
+	pointer-events: none;
+}
+
 button, input, textarea, select, option {
 	border: 0;
 	outline: 0;

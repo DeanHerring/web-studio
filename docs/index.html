@@ -4,12 +4,22 @@
     <title>Your title </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="/css/ol_slider.min.css">
     <link rel="stylesheet" href="/css/main.min.css">
   </head>
   <body>
     <div id="wrapper">
       <main class="main">
+        <div class="dropdown__menu">
+          <div class="dropdown__menu-overlay"> </div>
+          <ul class="dropdown__menu-list">
+            <li class="dropdown__menu-item"><a class="dropdown__menu-link">Home</a></li>
+            <li class="dropdown__menu-item"><a class="dropdown__menu-link">About</a></li>
+            <li class="dropdown__menu-item"><a class="dropdown__menu-link">Contact</a></li>
+          </ul>
+        </div>
         <div class="container">
           <section class="content">
             <div class="top">
@@ -25,6 +35,7 @@
                     <li class="header__menu-item"><a class="header__menu-link" href="#reviews">Project</a></li>
                     <li class="header__menu-item"><a class="header__menu-link" href="#subs">Contact</a></li>
                   </ul>
+                  <div class="header__menu-hamburger"><i class="fa-solid fa-bars icon dropdown-open"></i></div>
                 </div>
               </header>
               <div class="top__body">
@@ -95,38 +106,33 @@
               </header>
               <div class="reviews__content">
                 <div class="reviews__slider">
-                  <div class="reviews__avatar"><img class="review__image show" src="https://i1.sndcdn.com/artworks-517dbCfbqbHwhEti-ClLeNg-t240x240.jpg"><img class="review__image" src="https://images.genius.com/fa6771f85400678f949ab2da5d822b4e.400x400x1.png"><img class="review__image" src="https://lastfm.freetls.fastly.net/i/u/ar0/9218ff4ef13104b8acef7e2233c7fc64.jpg"><img class="review__image" src="https://www.meme-arsenal.com/memes/29ca8d7430533faa18f12db4a8d3807b.jpg"><img class="review__image" src="https://www.meme-arsenal.com/memes/e5da7cbb9862bde66bde3a87f6ab9514.jpg"></div>
-                  <div class="reviews__text">
-                    <div class="ol">
-                      <div class="ol__wrapper">
-                        <div class="ol__slide active"> 
+                  <div class="swiper mySwiper">
+                    <div class="swiper-wrapper"> 
+                      <div class="swiper-slide">
+                        <div class="reviews__avatar"><img class="review__image show" src="https://i1.sndcdn.com/artworks-517dbCfbqbHwhEti-ClLeNg-t240x240.jpg"></div>
+                        <div class="reviews__text">
                           <h1>Фома</h1>
-                          <p>Фома — лидер группы. Настоящее имя — Дмитрий (Фомин) Прянов. Обладатель моментально узнаваемого высокого голоса, из-за которого некоторые недалёкие люди начинают подозревать его в гомосячестве. Главный генератор всех высеров шедевров команды «Ебанько». Исполнил в составе коллектива более 500 песен.</p>
-                        </div>
-                        <div class="ol__slide">
-                          <h1>Поль Лэнэ</h1>
-                          <p>Поль Лэнэ (он же Полено, Бревно, Деревянный, Савелич, Буратино). Участник основного состава группы. Настоящее имя — Александр Карпихин. Спел 175 песен в составе Ебанашек. Лучший друг Фомы. О нём нынешнем тоже смотрите чуть пониже.</p>
-                        </div>
-                        <div class="ol__slide">
-                          <h1>Карим (он же Руслан)</h1>
-                          <p>Карим (он же Руслан). В теории — непонятный ноль без палочки, ибо отметился лишь в 9 песнях группы, но по факту оказал (цитата с фан-сайта группы) огромное влияние на целый пласт культуры «Ебанько». Прямо серый кардинал какой-то…</p>
-                        </div>
-                        <div class="ol__slide">
-                          <h1>Харитон</h1>
-                          <p>Харитон (он же Харитон Устинович Йорк — имеющие уши да слышат). Настоящее имя — Сергей Данилов. Участник основного состава группы. Обладает очень красивым низким тембром голоса. Исполнил вокальные партии в 102 песнях.</p>
-                        </div>
-                        <div class="ol__slide">
-                          <h1>Бусенка</h1>
-                          <p>Бусенка. Настоящее имя — Ирина Иванова (ВКонтакте она, правда, почему-то Ирен Гладких). Приняла участие в исполнении 29 песен «Ебанько».</p>
+                          <p>Поль Лэнэ (он же Полено, Бревно, Деревянный, Савелич, Буратино). Участник основного состава группы. Настоящее имя — Александр Карпихин. Спел 175 песен в составе Ебанашек.</p>
                         </div>
                       </div>
-                      <div class="ol__dots">
-                        <div class="ol__dot hidden">1</div>
+                      <div class="swiper-slide">
+                        <div class="reviews__avatar"><img class="review__image show" src="https://i1.sndcdn.com/artworks-517dbCfbqbHwhEti-ClLeNg-t240x240.jpg"></div>
+                        <div class="reviews__text">
+                          <h1>Фома</h1>
+                          <p>Поль Лэнэ (он же Полено, Бревно, Деревянный, Савелич, Буратино). Участник основного состава группы. Настоящее имя — Александр Карпихин. Спел 175 песен в составе Ебанашек.</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="reviews__avatar"><img class="review__image show" src="https://i1.sndcdn.com/artworks-517dbCfbqbHwhEti-ClLeNg-t240x240.jpg"></div>
+                        <div class="reviews__text">
+                          <h1>Фома</h1>
+                          <p>Поль Лэнэ (он же Полено, Бревно, Деревянный, Савелич, Буратино). Участник основного состава группы. Настоящее имя — Александр Карпихин. Спел 175 песен в составе Ебанашек.</p>
+                        </div>
                       </div>
                     </div>
+                    <div class="swiper-pagination"></div>
                   </div>
                 </div>
-                <div class="reviews__people"><img src="./image/reviews-people.svg"></div>
               </div>
             </div>
             <div class="subs">
@@ -138,6 +144,9 @@
                   </div>
                   <div class="subs__form-input">
                     <input placeholder="Enter your email address..">
+                    <button>Contact Now</button>
+                  </div>
+                  <div class="subs__form-button">
                     <button>Contact Now</button>
                   </div>
                 </div>
@@ -202,6 +211,6 @@
       </main>
     </div>
   </body>
-  <script src="/js/ol_slider.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="/js/main.js"></script>
 </html>
